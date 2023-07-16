@@ -1,44 +1,36 @@
 if __name__ == "__main__":
-    #EXERCISE 1
-    num1 = float(input("Введіть перше число: "))
-    num2 = float(input("Введіть друге число: "))
-    num3 = float(input("Введіть третє число: "))
-    operation = input("Виберіть операцію (сума або добуток): ")
-    if operation == "сума":
-        result = num1 + num2 + num3
-        print("Сума чисел:", result)
-    elif operation == "добуток":
-        result = num1 * num2 * num3
-        print("Добуток чисел:", result)
-    else:
-        print("Невірнo")
-        #EXERCISE 2
-        num1 = float(input("vvedit pershe chyslo: "))
-        num2 = float(input("vvedit druhe cheslo: "))
-        num3 = float(input("vvedit trete chyclo: "))
-        operation = input("Виберіть операцію (максимум, мінімум або середнє): ")
-        if operation == "максимум":
-            result = max(num1, num2, num3)
-            print("Максимум:", result)
-        elif operation == "мінімум":
-            result = min(num1, num2, num3)
-            print("minimum:", result)
-        elif operation == "середнє":
-            result = (num1 + num2 + num3) / 3
-            print("Середнє:", result)
-        else:
-            print("Невірна операція")
-            #EXERCISE 3
-            meters = float(input("Введіть кількість метрів: "))
-            unit = input("Виберіть одиницю вимірювання (милі, дюйми або ярди): ")
-            if unit == "милі":
-                result = meters / 1609.34
-                print("Милі:", result)
-            elif unit == "дюйми":
-                result = meters * 39.37
-                print("Дюйми:", result)
-            elif unit == "ярди":
-                result = meters * 1.09361
-                print("рди:", result)
-            else:
-                print("Невірна одиниця вимірювання")
+    # ВПРАВА 1
+
+    numberOne = input("Введіть перше число")
+    numberTwo = input("Введіть друге число")
+    numberThree = input("Введіть третє число")
+    число = int(numberOne + numberTwo + numberThree)
+    print("створене число", число)
+   # ВПРАВА 2
+    number = int(input("введіть чотиризначне число: "))
+    product = 1
+    while number > 0:
+     digit = number % 10
+    product *= digit
+    number //= 10
+    print("добуток цифр:", product)
+   # EXERcISE 3
+    meters = float(input("Введіть кількість метрів: "))
+    sm = meters * 100
+    decimeters = meters * 10
+    milimitr = meters * 1000
+    miles = meters/ 1609
+    print("У сантиметрах:", sm)
+    print("У дециметрах:", decimeters)
+    print("У міліметрах:", milimitr)
+    print("У милях:", miles)
+    # ВПРАВА 4
+
+    size = float(input("Введіть розмір основи трикутника: "))
+    height = float(input("Введіть розмір висоти трикутника: "))
+    площа = 0, 5 * розмір * висота
+    # print("Площа трикутника:", area)
+    # EXERSISE 5
+    number = int(input("Введіть чотиризначне число: "))
+    reverse_number = int(str(number)[::-1])
+    print("Resultat:", reverse_number)
